@@ -1,7 +1,3 @@
-module P3 (
-  problem3,
-  solveProblem3
-  ) where
 import Control.Monad (mapM_)
 
 -- All primes
