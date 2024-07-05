@@ -1,0 +1,50 @@
+cabal-version:      2.4
+name:               project-euler
+version:            0.1.0.0
+
+-- A short (one-line) description of the package.
+-- synopsis:
+
+-- A longer description of the package.
+-- description:
+
+-- A URL where users can report bugs.
+-- bug-reports:
+
+-- The license under which the package is released.
+-- license:
+author:             Chandler Barlow
+maintainer:         chandlerbrlw@gmail.com
+
+-- A copyright notice.
+-- copyright:
+-- category:
+extra-source-files: CHANGELOG.md
+
+library
+    exposed-modules:
+        Solutions
+    hs-source-dirs: 
+        lib
+      , lib/solutions
+    build-depends: 
+        base ^>=4.17.2.1
+    default-language: Haskell2010
+
+executable project-euler
+    main-is: Main.hs
+
+    -- Modules included in this executable, other than Main.
+    other-modules: Solutions
+
+    -- LANGUAGE extensions used by modules in this package.
+    other-extensions: 
+        LambdaCase
+      , TypeApplications
+      , OverloadedStrings
+    ghc-options: -Wall -Wcompat -Widentities -Wincomplete-record-updates -Wincomplete-uni-patterns -Wmissing-export-lists -Wmissing-home-modules -Wpartial-fields -Wredundant-constraints -threaded -rtsopts -with-rtsopts=-N-Wall -Wcompat -Widentities -Wincomplete-record-updates -Wincomplete-uni-patterns -Wmissing-export-lists -Wmissing-home-modules -Wpartial-fields -Wredundant-constraints -threaded -rtsopts -with-rtsopts=-N-Wall -Wcompat -Widentities -Wincomplete-record-updates -Wincomplete-uni-patterns -Wmissing-export-lists -Wmissing-home-modules -Wpartial-fields -Wredundant-constraints -threaded -rtsopts -with-rtsopts=-N-Wall -Wcompat -Widentities -Wincomplete-record-updates -Wincomplete-uni-patterns -Wmissing-export-lists -Wmissing-home-modules -Wpartial-fields -Wredundant-constraints -threaded -rtsopts -with-rtsopts=-N    
+    build-depends:    
+        base ^>=4.17.2.1
+      , project-euler 
+    hs-source-dirs:   app
+    default-language: Haskell2010

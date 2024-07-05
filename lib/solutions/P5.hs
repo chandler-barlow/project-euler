@@ -1,4 +1,4 @@
-
+module P5 (solve) where
 {-
   the optimal way to do this one is
   given a range n to m we keep only the primes.

@@ -1,3 +1,4 @@
+module P2 (solve) where
 -- Every single fibonacci number in EXISTENCE
 fibonacci :: [Int]
 fibonacci = 
@@ -7,6 +8,6 @@ fibonacci =
 problem2 :: Int
 problem2 = 
   let evenFibs = filter even fibonacci
-  in sum $ takeWhile (4_000_000 >) evenFibs
+  in sum $ takeWhile (4000000 >) evenFibs
 
-main = print problem2          
+solve = print problem2          

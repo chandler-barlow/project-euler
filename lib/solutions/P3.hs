@@ -1,3 +1,4 @@
+module P3 (solve) where
 import Control.Monad (mapM_)
 
 -- All primes
@@ -35,4 +36,4 @@ problem3 = primeFactors 600851475143
  all primes up to sqrt(n).
  If I didn't do this you'd have to wait like twenty minutes lmao
  -}
-solveProblem3 = mapM_ print problem3
+solve = mapM_ print problem3
